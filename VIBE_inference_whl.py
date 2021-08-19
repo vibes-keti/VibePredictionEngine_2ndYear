@@ -27,18 +27,16 @@ def inference(data_set, VI):
 
 if __name__ == "__main__":
 
-    
     ## 0.예측에 필요한 적절한 모델과 전처리를 선택하기 위한 파라미터 셋팅
     # test_parameters에 주요 파라미터를 기술해놓음
-    # ㅖㅁ
-    # 현재는 80분 동안의 데이터를 바탕으로 12분 이후의 값을 예측함 
+    # 현재 파라미터는 80분 동안의 데이터를 바탕으로 12분 이후의 CO2ppm 값을 예측함 
     from settings import vibe_setting as vls
     from settings import test_parameters as ts
     VI= vls.vibe_learning(ts.features, ts.time_min, ts.learning_method_num)
     #########################
 
     ## 1. 예측에 필요한 입력 데이터
-
+    ## 실제 VIBE 모듈에서는 입력 데이터를 dataframe 형태로 만들어 입력해야함
     import os
     dirname = os.path.dirname(__file__)
     test_data_fileName = os.path.join(dirname, 'data','test_data.csv')
@@ -46,7 +44,10 @@ if __name__ == "__main__":
 
     data_set = data_set[VI.feature_list]
     data_set = data_set[-VI.X_row_num:]
+    print(data_set)
     ######################################
-
+    ## 2. inference
+    # inference 함수에 data와 파라미터를입력하면 결과값을 전달함
+    
     inv_yhat= inference(data_set, VI)  
     print(inv_yhat)
