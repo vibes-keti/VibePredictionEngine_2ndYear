@@ -35,8 +35,8 @@ if __name__ == "__main__":
     test_data_fileName = os.path.join(dirname, 'data','test_data.csv')
     print(test_data_fileName)
     
-    from KETIAppMachineLearning.VIBES.settings import vibe_setting as vls
-    from KETIAppMachineLearning.VIBES.settings import test_parameters as ts
+    from settings import vibe_setting as vls
+    from settings import test_parameters as ts
 
     VI= vls.vibe_learning(ts.features, ts.time_min, ts.learning_method_num)
 
