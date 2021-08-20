@@ -12,7 +12,7 @@ $ pip install -r requirements.txt
 
 # 휠파일 인스톨
 ```bash
-pip install vibe-0.2-py3-none-any.whl --force-reinstall
+$ pip install vibe-0.2-py3-none-any.whl --force-reinstall
 ```
 
 # VIBE_inference_whl 실행
