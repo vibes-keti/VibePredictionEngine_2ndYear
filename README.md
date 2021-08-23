@@ -30,11 +30,8 @@ $ pip install -r requirements.txt
 $ pip install vibe-0.2-py3-none-any.whl --force-reinstall
 ```
 
-<<<<<<< HEAD
-# VIBE_inference_whl.py
-=======
 ## VIBE_inference_whl 실행
->>>>>>> 4d3fd881cf9c761873fb8a2f2645f624566674fb
+
 ```bash
 - 의 (if __name__ == "__main__":)에 테스트 코드  하위 코드는 테스트 코드로 해당 코드를 실행하면 예측된 값을 출력함
 - 주석 참고
