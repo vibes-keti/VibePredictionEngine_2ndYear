@@ -37,6 +37,7 @@ if __name__ == "__main__":
 
     ## 1. 예측에 필요한 입력 데이터
     ## 실제 VIBE 모듈에서는 입력 데이터를 dataframe 형태로 만들어 입력해야함
+    ## 글루시스에서 변경해야할 코드 부분
     import os
     dirname = os.path.dirname(__file__)
     test_data_fileName = os.path.join(dirname, 'data','test_data.csv')
