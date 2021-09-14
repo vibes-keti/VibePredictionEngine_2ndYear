@@ -50,5 +50,13 @@ if __name__ == "__main__":
     ## 2. inference
     # inference 함수에 data와 파라미터를입력하면 결과값을 전달함
     
+    # For style
+    """
+    for i in range(100000):
+        inv_yhat= inference(data_set, VI)  
+        print(inv_yhat)
+    
+    """
+    # Inline
     inv_yhat= inference(data_set, VI)  
     print(inv_yhat)
